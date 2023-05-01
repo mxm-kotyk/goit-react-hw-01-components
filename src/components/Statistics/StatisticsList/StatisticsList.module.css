@@ -1,0 +1,36 @@
+.statList {
+  min-width: 400px;
+  display: grid;
+  grid-auto-rows: 80px;
+  grid-template-columns: repeat(auto-fill,
+      minmax(80px, 1fr));
+
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.label {
+  font-size: 18px;
+  color: #fff;
+  text-shadow: -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  ;
+}
+
+.percentage {
+  font-size: 18px;
+  color: #fff;
+  text-shadow: -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  ;
+}

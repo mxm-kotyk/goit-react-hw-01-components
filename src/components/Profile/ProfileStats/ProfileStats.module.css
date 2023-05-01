@@ -1,7 +1,6 @@
 .stats {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  list-style: none;
 }
 
 .stats>li {
@@ -11,8 +10,19 @@
   gap: 10px;
   padding: 16px;
   background-color: #F3F6F9;
-  border: 1px solid #E4E9F0;
+  border-top: 1px solid #E4E9F0;
 }
+
+.stats>li:first-child {
+  border-right: 1px solid #E4E9F0;
+  border-radius: 0 0 0 4px;
+}
+
+.stats>li:last-child {
+  border-left: 1px solid #E4E9F0;
+  border-radius: 0 0 4px 0;
+}
+
 
 .label {
   font-size: 12px;

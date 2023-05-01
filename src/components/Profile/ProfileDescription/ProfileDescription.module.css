@@ -9,6 +9,8 @@
   width: 100px;
   margin-top: 30px;
   margin-bottom: 20px;
+  clip-path: circle(48px at 50px 48px);
+  background-color: #768696;
 }
 
 .name {

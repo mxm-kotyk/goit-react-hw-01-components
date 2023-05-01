@@ -1,0 +1,7 @@
+.statistics {
+  margin: 20px auto;
+  width: fit-content;
+  background-color: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+}

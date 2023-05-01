@@ -2,7 +2,7 @@ import css from './ProfileDescription.module.css'
 import PropTypes from 'prop-types'
 
 export const ProfileDescription = ({username, tag, location, avatar}) => {
-  return <div className={css.description}>
+  return (<div className={css.description}>
     <img
       src={avatar}
       alt="User avatar"
@@ -11,7 +11,7 @@ export const ProfileDescription = ({username, tag, location, avatar}) => {
     <p className={css.name}>{username}</p>
     <p className={css.tag}>@{tag}</p>
     <p className={css.location}>{location}</p>
-  </div>
+  </div>)
 }
 
 ProfileDescription.propTypes = {

@@ -3,7 +3,7 @@ import { ProfileDescription } from '../ProfileDescription'
 import { ProfileStats } from '../ProfileStats'
 import user from '../../../data/user.json'
 
-export const User = () => {
+export const ProfileCard = () => {
   return (<div className={css.profile}>
     <ProfileDescription
       username={user.username}
