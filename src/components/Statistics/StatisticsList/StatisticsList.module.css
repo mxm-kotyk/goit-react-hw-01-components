@@ -15,22 +15,9 @@
   justify-content: center;
 }
 
-.label {
-  font-size: 18px;
-  color: #fff;
-  text-shadow: -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
-  ;
-}
-
+.label,
 .percentage {
   font-size: 18px;
   color: #fff;
-  text-shadow: -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
-  ;
+  text-shadow: 1px 1px 3px #000;
 }

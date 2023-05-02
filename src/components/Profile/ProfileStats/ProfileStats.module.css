@@ -13,16 +13,9 @@
   border-top: 1px solid #E4E9F0;
 }
 
-.stats>li:first-child {
-  border-right: 1px solid #E4E9F0;
-  border-radius: 0 0 0 4px;
-}
-
-.stats>li:last-child {
+.stats>li:not(:first-child) {
   border-left: 1px solid #E4E9F0;
-  border-radius: 0 0 4px 0;
 }
-
 
 .label {
   font-size: 12px;
