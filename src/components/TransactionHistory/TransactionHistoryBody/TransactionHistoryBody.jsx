@@ -1,4 +1,4 @@
-import css from './TransactionHistoryBody.module.css'
+import './TransactionHistoryBody.module.css'
 import PropTypes from 'prop-types'
 
 export const TransactionHistoryBody = ({data}) => {

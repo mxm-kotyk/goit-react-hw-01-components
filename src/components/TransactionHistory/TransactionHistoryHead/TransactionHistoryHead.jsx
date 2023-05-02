@@ -1,4 +1,4 @@
-import css from './TransactionHistoryHead.module.css'
+import './TransactionHistoryHead.module.css'
 
 export const TransactionHistoryHead = () => {
   return (<thead>
