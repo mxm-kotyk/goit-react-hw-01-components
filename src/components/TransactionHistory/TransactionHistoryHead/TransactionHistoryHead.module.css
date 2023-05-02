@@ -1,0 +1,14 @@
+thead {
+  background-color: cornflowerblue;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+th {
+  width: 200px;
+  padding: 14px;
+}
+
+th:not(:first-child) {
+  border-left: 1px solid #ccc;
+}

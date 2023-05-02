@@ -1,6 +1,7 @@
 import { ProfileCard } from "./Profile/ProfileCard";
 import { Statistics } from "./Statistics/Statistics";
 import { FriendList } from "./FriendList/FriendList";
+import { TransactionHistory } from "./TransactionHistory/TransactionHistory";
 
 export const App = () => {
   return (
@@ -10,7 +11,9 @@ export const App = () => {
       <h2>2- Секція статистики</h2>
       <Statistics title="Upload stats" />
       <h2>3 - Список друзів</h2>
-      <FriendList/>
+      <FriendList />
+      <h2>4 - Історія транзакцій</h2>
+      <TransactionHistory/>
     </>
   );
 };
