@@ -1,16 +1,20 @@
-td {
+import styled from "styled-components";
+
+export const TableCell = styled.td`
   padding: 14px;
   text-align: center;
   border-left: 1px solid #ccc;
-}
 
-td:first-child {
+  &:first-child {
   text-transform: capitalize;
   text-align: left;
   padding-left: 80px;
   border-left: none;
 }
+`
 
-tr:nth-child(even) {
+export const TableRow = styled.tr`
+  &:nth-child(even) {
   background-color: #e7e7e7;
 }
+`

@@ -1,21 +1,21 @@
-import css from './ProfileStats.module.css'
+import { Stats, Stat, Label, Quantity } from './ProfileStats.styled'
 import PropTypes from 'prop-types'
 
 export const ProfileStats = ({ followers, views, likes }) => {
-  return (<ul className={css.stats}>
-    <li>
-      <span className={css.label}>Followers</span>
-      <span className={css.quantity}>{followers}</span>
-    </li>
-    <li>
-      <span className={css.label}>Views</span>
-      <span className={css.quantity}>{views}</span>
-    </li>
-    <li>
-      <span className={css.label}>Likes</span>
-      <span className={css.quantity}>{likes}</span>
-    </li>
-  </ul>)
+  return (<Stats>
+    <Stat>
+      <Label>Followers</Label>
+      <Quantity>{followers}</Quantity>
+    </Stat>
+    <Stat>
+      <Label>Views</Label>
+      <Quantity>{views}</Quantity>
+    </Stat>
+    <Stat>
+      <Label>Likes</Label>
+      <Quantity>{likes}</Quantity>
+    </Stat>
+  </Stats>)
 }
 
 ProfileStats.propTypes = {

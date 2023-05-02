@@ -1,11 +1,11 @@
-import './TransactionHistoryHead.module.css'
+import { TableHead, TableHeadCell } from "./TransactionHistoryHead.styled"
 
 export const TransactionHistoryHead = () => {
-  return (<thead>
+  return (<TableHead>
     <tr>
-      <th>Type</th>
-      <th>Amount</th>
-      <th>Currency</th>
+      <TableHeadCell>Type</TableHeadCell>
+      <TableHeadCell>Amount</TableHeadCell>
+      <TableHeadCell>Currency</TableHeadCell>
     </tr>
-  </thead>)
+  </TableHead>)
 }

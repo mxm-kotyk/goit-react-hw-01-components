@@ -1,16 +1,15 @@
-import css from './StatisticsList.module.css'
+// import css from './StatisticsList.module.css'
+import { StatList, Item, Label, Percentage } from './StatisticsList.styled'
 import PropTypes from 'prop-types'
-import { getRandomHexColor } from 'utils/getRandomHexColor'
-
 
 export const StatisticsList = ({data}) => {
-  return (<ul className={css.statList}>
+  return (<StatList>
     {data.map(({ id, label, percentage }) => {
-      return <li className={css.item} key={id} style={{ backgroundColor: getRandomHexColor() }}>
-      <span className={css.label}>{label}</span>
-      <span className={css.percentage}>{percentage}%</span>
-    </li>})}
-  </ul>)
+      return <Item key={id}>
+      <Label>{label}</Label>
+      <Percentage>{percentage}%</Percentage>
+    </Item>})}
+  </StatList>)
 }
 
 StatisticsList.propTypes = {

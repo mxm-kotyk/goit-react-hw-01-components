@@ -1,4 +1,6 @@
-.profile {
+import styled from "styled-components";
+
+export const ProfileWrapper = styled.div`
   margin-top: 20px;
   margin-bottom: 20px;
   display: flex;
@@ -12,4 +14,4 @@
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   overflow: hidden;
-}
+`

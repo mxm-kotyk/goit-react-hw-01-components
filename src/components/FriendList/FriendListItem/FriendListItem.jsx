@@ -1,12 +1,12 @@
+import { Item, Name, Status } from './FriendListItem.styled'
 import PropTypes from 'prop-types'
-import css from './FriendListItem.module.css'
 
 export const FriendListItem = ({ data }) => {
-  return (data.map(({avatar, name, isOnline, id}) => {return <li className={css.item} key={id}>
-  <span className={`${css.status} ${isOnline ? css.online : css.offline}`}></span>
-  <img className={css.avatar} src={avatar} alt="User avatar" width="48" />
-    <p className={css.name}>{name}</p>
-</li>}))
+  return (data.map(({avatar, name, isOnline, id}) => {return <Item key={id}>
+  <Status aveliable={isOnline}></Status>
+  <img src={avatar} alt="User avatar" width="48" />
+    <Name>{name}</Name>
+</Item>}))
 }
 
 FriendListItem.propTypes = {

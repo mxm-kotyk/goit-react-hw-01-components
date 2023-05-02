@@ -1,10 +1,10 @@
-import css from './ProfileCard.module.css'
+import { ProfileWrapper } from './ProfileCard.styled'
 import { ProfileDescription } from '../ProfileDescription'
 import { ProfileStats } from '../ProfileStats'
-import user from '../../../data/user.json'
+import user from 'data/user.json'
 
 export const ProfileCard = () => {
-  return (<div className={css.profile}>
+  return (<ProfileWrapper>
     <ProfileDescription
       username={user.username}
       tag={user.tag}
@@ -16,5 +16,5 @@ export const ProfileCard = () => {
       views={user.stats.views}
       likes={user.stats.likes}
     />
-  </div>)
+  </ProfileWrapper>)
 }

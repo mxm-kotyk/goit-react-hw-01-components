@@ -1,9 +1,11 @@
-.stats {
+import styled from "styled-components";
+
+export const Stats = styled.ul`  
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-}
+`
 
-.stats>li {
+export const Stat = styled.li`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,17 +13,21 @@
   padding: 16px;
   background-color: #F3F6F9;
   border-top: 1px solid #E4E9F0;
-}
 
-.stats>li:not(:first-child) {
+  &:not(:first-child) {
   border-left: 1px solid #E4E9F0;
 }
+`
 
-.label {
+export const Label = styled.span`
   font-size: 12px;
-}
+`
 
-.quantity {
+export const Quantity = styled.span`
   font-size: 16px;
   font-weight: 700
-}
+`
+
+// export const  = styled.``
+
+// export const  = styled.``

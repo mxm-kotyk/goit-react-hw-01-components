@@ -1,14 +1,14 @@
-import './TransactionHistoryBody.module.css'
+import { TableCell, TableRow } from './TransactionHistoryBody.styled'
 import PropTypes from 'prop-types'
 
 export const TransactionHistoryBody = ({data}) => {
   return (<tbody>
     {data.map(({ id, type, amount, currency }) => {
-      return <tr key={id}>
-      <td>{type}</td>
-      <td>{amount}</td>
-      <td>{currency}</td>
-    </tr>})}
+      return <TableRow key={id}>
+      <TableCell>{type}</TableCell>
+      <TableCell>{amount}</TableCell>
+      <TableCell>{currency}</TableCell>
+    </TableRow>})}
   </tbody>)
 }
 

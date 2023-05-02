@@ -1,8 +1,8 @@
-import css from './StatisticsTitle.module.css'
+import { Title } from './StatisticsTitle.styled'
 import PropTypes from 'prop-types'
 
 export const StatisticsTitle = ({ title }) => {
-  return (<h2 className={css.title}>{title}</h2>)
+  return (<Title>{title}</Title>)
 }
 
 StatisticsTitle.propTypes = {

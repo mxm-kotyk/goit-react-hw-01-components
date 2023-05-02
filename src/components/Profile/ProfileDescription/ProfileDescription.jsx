@@ -1,17 +1,16 @@
-import css from './ProfileDescription.module.css'
+import { Description, Avatar, Name, Tag, Location } from './ProfileDescription.styled'
 import PropTypes from 'prop-types'
 
 export const ProfileDescription = ({username, tag, location, avatar}) => {
-  return (<div className={css.description}>
-    <img
+  return (<Description>
+    <Avatar
       src={avatar}
       alt="User avatar"
-      className={css.avatar}
     />
-    <p className={css.name}>{username}</p>
-    <p className={css.tag}>@{tag}</p>
-    <p className={css.location}>{location}</p>
-  </div>)
+    <Name>{username}</Name>
+    <Tag>@{tag}</Tag>
+    <Location>{location}</Location>
+  </Description>)
 }
 
 ProfileDescription.propTypes = {

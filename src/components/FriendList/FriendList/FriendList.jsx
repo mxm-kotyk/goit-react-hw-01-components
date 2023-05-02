@@ -1,9 +1,9 @@
-import css from './FriendList.module.css'
+import { List } from './FriendList.styled'
 import friends from 'data/friends'
 import { FriendListItem } from '../FriendListItem'
 
 export const FriendList = () => {
-  return (<ul className={css.friendList}>
+  return (<List>
     <FriendListItem data={friends}/>
-  </ul>)
+  </List>)
 }

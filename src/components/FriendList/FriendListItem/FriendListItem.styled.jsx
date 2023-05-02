@@ -1,4 +1,6 @@
-.item {
+import styled from "styled-components";
+
+export const Item = styled.li`
   display: flex;
   align-items: center;
   gap: 50px;
@@ -8,23 +10,18 @@
   background-color: #fff;
   border-radius: 4px;
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
-}
+`
 
-.name {
+export const Name = styled.p`
   font-weight: 500;
-}
+`
 
-.status {
+export const Status = styled.span`
   justify-self: start;
   width: 16px;
   aspect-ratio: 1;
   border-radius: 50%;
-}
-
-.online {
-  background-color: rgb(47, 201, 47);
-}
-
-.offline {
-  background-color: rgb(240, 53, 53);
-}
+  background-color: ${({ aveliable }) => {
+    return aveliable ? 'rgb(47, 201, 47)' : 'rgb(240, 53, 53)'
+  }}
+`
