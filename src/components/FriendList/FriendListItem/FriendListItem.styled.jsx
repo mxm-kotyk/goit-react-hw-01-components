@@ -21,7 +21,7 @@ export const Status = styled.span`
   width: 16px;
   aspect-ratio: 1;
   border-radius: 50%;
-  background-color: ${({ aveliable }) => {
-    return aveliable ? 'rgb(47, 201, 47)' : 'rgb(240, 53, 53)'
+  background-color: ${({ available }) => {
+    return available ? 'rgb(47, 201, 47)' : 'rgb(240, 53, 53)'
   }}
 `

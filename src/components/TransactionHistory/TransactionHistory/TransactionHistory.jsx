@@ -1,11 +1,11 @@
 import { Table } from './TransactionHistory.styled'
 import { TransactionHistoryHead } from '../TransactionHistoryHead'
 import { TransactionHistoryBody } from '../TransactionHistoryBody'
-import data from 'data/transactions'
+// import data from 'data/transactions'
 
-export const TransactionHistory = () => {
+export const TransactionHistory = ({transactions}) => {
   return (<Table>
     <TransactionHistoryHead />
-    <TransactionHistoryBody data={data} />
+    <TransactionHistoryBody transactions={transactions} />
   </Table>)
 }

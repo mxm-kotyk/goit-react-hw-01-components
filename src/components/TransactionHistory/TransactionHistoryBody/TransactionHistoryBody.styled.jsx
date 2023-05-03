@@ -8,7 +8,7 @@ export const TableCell = styled.td`
   &:first-child {
   text-transform: capitalize;
   text-align: left;
-  padding-left: 80px;
+  padding-left: 5vw;
   border-left: none;
 }
 `

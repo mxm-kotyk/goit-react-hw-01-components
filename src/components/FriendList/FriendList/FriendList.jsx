@@ -1,9 +1,8 @@
 import { List } from './FriendList.styled'
-import friends from 'data/friends'
 import { FriendListItem } from '../FriendListItem'
 
-export const FriendList = () => {
+export const FriendList = ({friends}) => {
   return (<List>
-    <FriendListItem data={friends}/>
+    <FriendListItem friends={friends}/>
   </List>)
 }

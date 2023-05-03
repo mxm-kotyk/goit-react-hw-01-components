@@ -1,9 +1,9 @@
 import { TableCell, TableRow } from './TransactionHistoryBody.styled'
 import PropTypes from 'prop-types'
 
-export const TransactionHistoryBody = ({data}) => {
+export const TransactionHistoryBody = ({transactions}) => {
   return (<tbody>
-    {data.map(({ id, type, amount, currency }) => {
+    {transactions.map(({ id, type, amount, currency }) => {
       return <TableRow key={id}>
       <TableCell>{type}</TableCell>
       <TableCell>{amount}</TableCell>

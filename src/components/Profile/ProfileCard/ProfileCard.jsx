@@ -1,9 +1,8 @@
 import { ProfileWrapper } from './ProfileCard.styled'
 import { ProfileDescription } from '../ProfileDescription'
 import { ProfileStats } from '../ProfileStats'
-import user from 'data/user.json'
 
-export const ProfileCard = () => {
+export const ProfileCard = ({user}) => {
   return (<ProfileWrapper>
     <ProfileDescription
       username={user.username}
